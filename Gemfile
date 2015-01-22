@@ -30,10 +30,6 @@ gem 'binding_of_caller'
 
 gem 'bootstrap_form'
 
-gem "therubyracer"
-
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.

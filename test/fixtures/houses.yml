@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: houses
+#
+#  id                     :integer          not null, primary key
+#  location               :string(255)
+#  numberOfBedRooms       :integer
+#  numberOfBathRooms      :integer
+#  numberOfReceptionRooms :integer
+#  size                   :integer
+#  security               :string(255)
+#  price                  :decimal(8, 2)
+#  created_at             :datetime
+#  updated_at             :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  numberOfBedRooms: 1
+  numberOfBathRooms: 1
+  numberOfReceptionRooms: 1
+  size: 1
+  security: MyString
+  price: 9.99
+
+two:
+  location: MyString
+  numberOfBedRooms: 1
+  numberOfBathRooms: 1
+  numberOfReceptionRooms: 1
+  size: 1
+  security: MyString
+  price: 9.99

@@ -1,8 +1,26 @@
 Rails.application.routes.draw do
-  devise_for :landlords
-  root 'pages#home'
   
-  #get 'pages/home'
+  get 'houses/index'
+
+  get 'houses/new'
+
+  get 'houses/show'
+
+  get 'houses/create'
+
+  get 'houses/edit'
+
+  get 'houses/update'
+
+  get 'houses/destroy'
+
+  devise_for :landlords
+  
+  resources :houses
+  
+  root 'pages#index'
+  
+  get 'pages/home'
 
   get 'pages/about'
 

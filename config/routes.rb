@@ -1,18 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'houses/index'
-
-  get 'houses/new'
-
-  get 'houses/show'
-
-  get 'houses/create'
-
-  get 'houses/edit'
-
-  get 'houses/update'
-
-  get 'houses/destroy'
 
   devise_for :landlords
   

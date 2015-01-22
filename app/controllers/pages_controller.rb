@@ -8,7 +8,7 @@ class PagesController < ApplicationController
       return
     else
       # Make Login page the default page
-     redirect_to new_admin_session_path
+     redirect_to new_landlord_session_path
     end
     #render(:layout => "layouts/landing")
   end

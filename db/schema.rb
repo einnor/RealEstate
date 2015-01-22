@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150122083726) do
+ActiveRecord::Schema.define(version: 20150122115658) do
 
   create_table "houses", force: true do |t|
     t.string   "location"
@@ -20,9 +20,10 @@ ActiveRecord::Schema.define(version: 20150122083726) do
     t.integer  "numberOfReceptionRooms"
     t.integer  "size"
     t.string   "security"
-    t.decimal  "price",                  precision: 8, scale: 2
+    t.decimal  "price",                  precision: 8, scale: 2, default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo"
   end
 
   create_table "landlords", force: true do |t|

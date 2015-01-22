@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-3">
-    The total cost of the houses goes here
+    <h2 style="color: green"><%= number_with_precision(@total, :precision => 2, :delimiter => ',') %></h2>
   </div>
   
   <div class="col-md-9">
@@ -36,7 +36,7 @@
               <td>Security</td><td><%= house.security %></td>
             </tr>
             <thead>
-              <td>Cost of House</td><td>KES <%= house.price %></td>
+              <td>Cost of House</td><td>KES <%= number_with_precision(house.price, :precision => 2, :delimiter => ',') %></td>
             </thead>
           </table>
         </div>

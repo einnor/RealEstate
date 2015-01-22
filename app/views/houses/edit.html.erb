@@ -24,7 +24,7 @@
       <%= f.text_field :size %><br />
       
       <%= f.label :security %> <br />
-      <%= f.text_field :security %><br />
+      <%= f.select :security, options_for_select(%w[Low Medium High]) %><br />
       <br />
       
       <%= f.submit "Update", :class=>"btn btn-primary" %>

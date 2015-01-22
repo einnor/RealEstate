@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :landlords
   root 'pages#home'
   
   #get 'pages/home'

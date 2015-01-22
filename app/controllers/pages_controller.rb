@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_filter  :authenticate_landlord!, only: [:home]
+  
   def home
   end
 

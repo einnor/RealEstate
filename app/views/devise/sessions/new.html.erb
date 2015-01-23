@@ -2,17 +2,20 @@
     
     <div class="wrapper row-offcanvas row-offcanvas-left">
       <div class="row">
-        <h2>Log in</h2>
-
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <span href="#" class="button" id="toggle-login">Log in</span>
+        
+        <div id="login">
+          <div id="triangle"></div>
+          <h1>Log in</h1>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field">
             <%= f.label :email %><br />
-            <%= f.email_field :email, autofocus: true %>
+            <%= f.email_field :email, :placeholder => "E-Mail", autofocus: true %>
           </div>
         
           <div class="field">
             <%= f.label :password %><br />
-            <%= f.password_field :password, autocomplete: "off" %>
+            <%= f.password_field :password, :placeholder => "Password", autocomplete: "off" %>
           </div>
         
           <% if devise_mapping.rememberable? -%>
@@ -26,8 +29,7 @@
             <%= f.submit "Log in" %>
           </div>
         <% end %>
-        
-
+        </div>
       </div>
     </div>
 </div>

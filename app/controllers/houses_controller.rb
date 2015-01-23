@@ -5,7 +5,6 @@ class HousesController < ApplicationController
   def index
     @houses = House.all
     @total = 0.0
-    @houses.each {|house| @total += house.price }
     
     @houses.each {|house|
       numberOfBedRooms = house.numberOfBedRooms
@@ -19,7 +18,8 @@ class HousesController < ApplicationController
       house.save!
     }
     
-
+    @houses.each {|house| @total += house.price }
+    
   end
 
   def new
